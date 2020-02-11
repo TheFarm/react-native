@@ -230,7 +230,7 @@
     [_customRefreshControl removeFromSuperview];
   }
   _customRefreshControl = refreshControl;
-  [self addSubview:_customRefreshControl];
+  self.refreshControl = _customRefreshControl;
 }
 
 - (void)setPinchGestureEnabled:(BOOL)pinchGestureEnabled
